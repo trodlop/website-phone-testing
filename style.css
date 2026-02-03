@@ -235,7 +235,7 @@ body {
 
 @media (max-width: 700px) {
     #new_item_window {
-        width: 70vw;
+        width: 85vw;
     }
 }
 
@@ -243,4 +243,5 @@ body {
 #padding {
     height: 1500px;
     width: 100vw;
+
 }

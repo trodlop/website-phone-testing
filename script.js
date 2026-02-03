@@ -136,6 +136,7 @@ function intitialise_event_listeners() {
     });
 
     document.getElementById("new_item_container").addEventListener("click", new_shopping_list_item);
+    document.getElementById("new_item_close_window_img").addEventListener("click", close_new_item_window);
     
 };
 function toggle_checkbox(img) {
@@ -218,8 +219,15 @@ function delete_shopping_list_item(item_id) {
 };
 function new_shopping_list_item() {
 
+    const new_item_window = document.getElementById("new_item_window");
+    new_item_window.style.display = "flex";
+
     let uuid = Math.random().toString(36).slice(2, 2 + 10); // Generate new UUID of length 10
     console.log(uuid);
+};
+function close_new_item_window() {
+    const new_item_window = document.getElementById("new_item_window");
+    new_item_window.style.display = "none";
 };
 
 //! -------------------------------------------------------------------------

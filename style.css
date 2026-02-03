@@ -242,18 +242,27 @@ body {
         margin: 20px 20px 0px 0px;
         cursor: pointer;
     }
+    .template_form_subcontainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
     .new_item_form_label {
-        font-size: 3vw;
+        width: 100%;
+        font-size: 4vw;
+        margin-bottom: 10px;
     }
     .new_item_form_input {
-        height: 4vw;
-        font-size: 3vw;
+        height: 7vw;
+        width: 100%;
+        font-size: 4vw;
+        box-sizing: border-box;
     }
     #new_item_form_submit_container {
         margin: 2vw 0px 3vw;
     }
     #new_item_form_submit {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 
